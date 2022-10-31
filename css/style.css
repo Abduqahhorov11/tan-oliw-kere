@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.4;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* start */
+
+header{
+    widows: 100%;
+    height: 100vh;
+    background-image: url(../img/as-photo.jpg);
+    background-size: 100% 100%;
+    background-position:  fixed;
+    background-attachment: fixed;
+}
+.tittle{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 96px;
+}
+h1{
+    font-family: Calibri;
+    font-size: 40px;
+    color: white;
+}
+.tittle p{
+    font-size: 18px;
+    padding-left: 400px;
+    padding-right: 400px;
+    font-style: italic;
+    color: white;
+}
+.icon1{
+    text-align: center;    
+}
+.icon1 i{
+    padding-top: 40px;
+    color: white;
+    font-size: 80px;
+    transition: all 0.5s;
+}
+.icon1 i:hover{
+    color: grey;
+}
+.btn1{
+    width: 180px;
+    height: 50px;
+    margin-top: 130px;
+    margin-left: 595px;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    border: 1px solid rgb(199, 199, 199);
+    transition: all 0.7s;
+}
+.btn1:hover{
+    color: black;
+    background-color: orange; 
+    border: 1px solid black;
+    letter-spacing: 1px;
+}
+/* header end */
+
+/* section start */
+
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/photo-2.jpg);
+    background-size: 100% 100%;
+}
+h2{
+    font-size: 50px;
+    color: white;
+    padding-right: 650px;
+    padding-left: 120px;
+    font-family: Calibri;
+    font-weight: 100;
+    padding-top: 80px;
+}
+.p{
+    font-size: 18px;
+    color: white;
+    text-align: left;
+    padding-right: 700px;
+    padding-left: 120px;
+    padding-top: 20px;
+}
+.p2{
+    padding-top: 30px;
+}
+.btn2{
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+    margin-left: 250px;
+    background-color: orange;
+    border: 1px solid rgb(199, 199, 199);
+    transition: all 0.7s;
+}
+.btn2:hover{
+    color: white;
+    background-color: red; 
+    border: 1px solid black;
+    letter-spacing: 1px;
+}
+
+/* end section  */
+
+main{
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/photo-3.jpg);
+    background-size: 100% 100%;
+    background-position:  fixed;
+    background-attachment: fixed;
+} 
+.img_people{
+    widows: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 4px solid black;
+    margin-left: 600px;
+    margin-top: 50px;
+}  
+main p{
+    text-align: center;
+    color: white;
+    font-family: Calibri;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+/* loader */
+.loader {
+    position: relative;
+    width: 100px;
+    height: 16px;
+    margin-left: 635px;
+  }
+  .loader:before , .loader:after{
+    content: "";
+    margin-top: 40px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background: white;
+    box-shadow: 32px 0 black;
+    left: 0;
+    top: 0;
+    animation: ballMoveX 0.5s linear infinite;                
+  }
+  .loader:after {
+    box-shadow: none;
+    transform-origin: 40px 0;
+    transform: rotate(-180deg);
+    animation: rotateLoader 0.5s linear infinite;
+  }
+
+  @keyframes rotateLoader {
+    0% , 10%{ transform: rotate(-153deg); }
+    90%, 100% { transform: rotate(0deg); }
+  }
+  @keyframes ballMoveX {
+    0% , 10%{  transform: translateX(0) }
+    90%, 100% { transform: translateX(32px) }
+  }
+      
+/* loader end */
+
+/* main end */
+
+
+.the{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+.t_parent1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.t_parent2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.t{
+    color: grey;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.btn3{
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 570px;
+    background-color: red;
+    border: 1px solid rgb(199, 199, 199);
+    transition: all 0.7s;
+}
+.btn3:hover{
+    color: black;
+    background-color: orange; 
+    border: 1px solid black;
+    letter-spacing: 1px;
+}
+
+/* start footer */
+
+footer{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+    padding-top: 80px;
+}
+.red{
+    margin-left: 100px;
+    width: 250px;
+    height: 350px;
+    background-color: grey;
+}
+.red_inner{
+    width: 250px;
+    height: 300px;
+    background-color: rgb(225, 97, 97);
+}
+.red span{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+    padding-left: 35px;
+}
+.orange{
+    margin-left: 400px;
+    margin-top: -350px;
+    width: 250px;
+    height: 350px;
+    background-color: grey;
+}
+.orange_inner{
+    width: 250px;
+    height: 300px;
+    background-color: rgb(245, 195, 102);
+}
+.orange span{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+    padding-left: 75px;
+    color: whitesmoke;
+
+}
+.tittle_end{
+    margin-left: 740px;
+    margin-top: -320px;
+}
+h3{
+    color: grey;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.tittle_end span{
+    font-size: 18px;    
+    padding-right: 30px;
+}
+
+/* start media screen */
+
+@media screen and (max-width:700px){
+    header{
+        height: 110vh;
+    }
+    .tittle p{
+        display: none;
+    }
+    .icon1 i{
+        padding-top: 40px;
+        font-size: 50px;
+        transition: all 0.5s;
+    }
+    .btn1{
+        margin-top: 80px;
+        margin-left: 260px;
+        font-size: 20px;
+    }
+    
+section{
+    height: 110vh;
+}
+h2{
+    color: white;
+    padding-top: 100px;
+    font-size: 30px;
+    padding-right: 20px;
+    padding-left: 50px;
+}
+.p{
+    font-size: 19px;
+    padding-right: 80px;
+    padding-top: 50px;
+}
+main{
+    height: 90vh;
+} 
+.img_people{
+    margin-left: 280px;
+}  
+main p{
+    font-size: 25px;
+}
+.loader {
+    margin-left: 300px;
+  }
+  .the{
+    height: 180vh;
+}
+.btn3{
+    margin-left: 250px;
+}
+
+footer{
+    height: 140vh;
+}
+.red{
+    margin-left: 50px;
+    margin-top: 180px;
+}
+.orange{
+    margin-left: 400px;
+    margin-top: -350px;
+}
+.tittle_end{
+    margin-left: 60px;
+    margin-top: -540px;
+    padding-right: 100px;
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+}
+}
